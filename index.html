@@ -23,40 +23,40 @@
 
     <div id="content">
 
-      <div class="page">
+      <section id="profilePage">
         Content will be here
-      </div>
-      <div class="page">
+      </section>
+      <section id="experiencePage">
         Content will be here
-      </div>
-      <div class="page">
+      </section>
+      <section id="educationPage">
         Content will be here
-      </div>
-      <div class="page">
+      </section>
+      <section id="portfolioPage">
         Content will be here
-      </div>
+      </section>
       <div id="tabs">
 
 
-        <div id="profile" class="fullpage">
+        <div class="fullpage" onmouseover="toggle('profilePage', 'profileTab')" id="profileTab">
           <div class="tab">
             <h2>Profile</h2>
           </div>
 
         </div>
-        <div id="experience" class="fullpage">
+        <div class="fullpage" onmouseover="toggle('experiencePage', 'experienceTab')" id="experienceTab">
           <div class="tab">
             <h2>Experience</h2>
           </div>
 
         </div>
-        <div id="education" class="fullpage">
+        <div class="fullpage" onmouseover="toggle('educationPage', 'educationTab')" id="educationTab">
           <div class="tab">
             <h2>Education</h2>
           </div>
 
         </div>
-        <div id="portfolio" class="fullpage">
+        <div class="fullpage" onmouseover="toggle('portfolioPage', 'portfolioTab')" id="portfolioTab">
           <div class="tab">
             <h2>Portfolio</h2>
           </div>
@@ -68,6 +68,8 @@
   </div>
 
   </div>
+  <script src="script.js"></script>
+
 </body>
 
 </html>

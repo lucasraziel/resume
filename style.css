@@ -5,13 +5,20 @@
   box-sizing: border-box;
 }
 
+section {
+  width: 0;
+  transition: width 2s;
+  color: transparent;
+  background-color: #fff;
+}
+
 
 
 body {
   background: #003249;
   color: #fff;
   -webkit-font-smoothing: antialiased;
-  overflow: none;
+  overflow: hidden;
 
 }
 body, input, button {
@@ -134,19 +141,27 @@ div#content {
 }
 
 div#tabs {
-  display:flex;
-  flex-direction: column;
-  flex:1;
+  display:grid;
+  grid-gap: 5px;
+  width: 50px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .fullpage {
-  flex:1;
-  margin-bottom: 5px;
+  width: 50px;
+  height: 100%;
 }
 
 
-.page {
-  display: none;
+
+
+.pageOpen {
+  display: block;
+  flex: 1;
+  width: 100%;
+  transition: all 2s;
+  color: #0D1821;
+
 }
 
 .tab {
@@ -164,4 +179,20 @@ div#tabs {
 .tab h2 {
   writing-mode: vertical-lr;
   color:  #0D1821;
+}
+
+#portfolioTab {
+  grid-row:4;
+}
+
+#profileTab {
+  grid-row: 1;
+}
+
+#educationTab {
+  grid-row: 3;
+}
+
+#experienceTab {
+  grid-row: 2;
 }
